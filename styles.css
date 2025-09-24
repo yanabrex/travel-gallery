@@ -1,16 +1,30 @@
+@media (max-width: 900px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}
 header {
     text-align: center;
 }
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 0rem 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
 }
 figure {
+    position: relative;
     width: 100%;
     aspect-ratio: 1 / 1;
     overflow: hidden;
-    text-align: center;
 }
 figure img {
     max-width: 100%;
@@ -19,6 +33,23 @@ figure img {
     height: 100%;
     object-fit: cover;
 }
+figcaption {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 100%;
+    padding: 5%;
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: opacity 0.5s ease;
+}
 footer {
     text-align: center;
+}
+figure:hover figcaption {
+    opacity: 1;
 }
