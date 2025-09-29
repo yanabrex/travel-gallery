@@ -11,7 +11,18 @@ This project is a responsive travel photo gallery built with **HTML** and **CSS 
 
 ## How to View
 
-- You can visit this project by opening this link: https://yanabrex.github.io/travel-gallery/
+[View the live site here](https://yanabrex.github.io/travel-gallery/)
+
+## Screenshots
+
+### Desktop View
+![Desktop View](images/desktop.png)
+
+### Tablet View
+![Tablet View](images/tablet.png)
+
+### Mobile View
+![Mobile View](images/mobile.png)
 
 ## Technologies Used
 
